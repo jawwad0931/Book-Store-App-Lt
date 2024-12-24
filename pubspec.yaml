@@ -34,7 +34,11 @@ dependencies:
   syncfusion_flutter_pdfviewer: ^28.1.35
   # lottie bhaiya
   lottie: ^3.2.0
-  firebase_core: ^2.16.0
+  # firebase bhaiya
+  firebase_core: ^3.8.1
+  # google login ka kaam ho raha hai
+  google_sign_in: ^6.2.2
+  firebase_auth: ^5.3.4
 
 
   # The following adds the Cupertino Icons font to your application.

@@ -6,6 +6,31 @@ class Primarybutton extends StatelessWidget {
   const Primarybutton({super.key, required this.btnName, required this.onTap});
 
   @override
+  // Widget build(BuildContext context) {
+  //   return InkWell(
+  //     onTap: onTap,
+  //     child: Container(
+  //       height: 30,
+  //       padding: const EdgeInsets.all(5),
+  //       decoration: BoxDecoration(
+  //         color: Theme.of(context).colorScheme.primary,
+  //       ),
+  //       child: Row(
+  //         mainAxisAlignment: MainAxisAlignment.center,
+  //         children: [
+  //           Text(
+  //             btnName,
+  //             style: Theme.of(context)
+  //                 .textTheme
+  //                 .bodyMedium
+  //                 ?.copyWith(color: Colors.white, letterSpacing: 1.5),
+  //           ),
+  //         ],
+  //       ),
+  //     ),
+  //   );
+  // }
+
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
@@ -18,6 +43,11 @@ class Primarybutton extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset(
+              'Assets/icons/google.png', // Replace with your PNG path
+              height: 20, // Adjust the size as needed
+            ),
+            const SizedBox(width: 8), // Space between the image and text
             Text(
               btnName,
               style: Theme.of(context)
